@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <title>Portfolio</title>
   </head>
@@ -6,12 +7,15 @@
     <table width="80%" align="center" style="background-color: white">
       <tr>
         <td>
+          <!-- START HEADER -->
           <h1 align="center" style="color: #136ead">John Doe Portfolio</h1>
           <p align="center" style="color: #136ead">
             Professional Web Developer
           </p>
+          <!-- END HEADER -->
         </td>
       </tr>
+      <!-- START ABOUT ME SECTION -->
       <tr>
         <td>
           <h2 style="color: #136ead">About Me</h2>
@@ -85,6 +89,9 @@
           <br />
         </td>
       </tr>
+      <!-- END ABOUT ME SECTION -->
+
+      <!-- START Experience Timeline SECTION -->
       <tr>
         <td>
           <h2 style="color: #106eba">Experience Timeline</h2>
@@ -193,6 +200,9 @@
           <br />
         </td>
       </tr>
+      <!-- END Experience Timeline SECTION -->
+
+      <!-- START Contact Me SECTION -->
 
       <tr>
         <td>
@@ -208,7 +218,7 @@
       </tr>
       <tr>
         <td>
-          <form action="">
+          <form>
             <fieldset>
               <legend>Personal Information</legend>
 
@@ -282,7 +292,17 @@
                       <label for="ptype">Project Type: *</label>
                     </td>
                     <td>
-                      <input type="text" name="Project Type" id="ptype" />
+                      <input
+                        type="search"
+                        name="Project Type"
+                        id="ptype"
+                        list="p-type"
+                      />
+                      <datalist id="p-type">
+                        <option value="Frontend"></option>
+                        <option value="Backend"></option>
+                        <option value="Fullstack"></option>
+                      </datalist>
                     </td>
                     <td width="200"></td>
                     <td>
@@ -403,6 +423,7 @@
           </form>
         </td>
       </tr>
+      <!-- END Contact Me SECTION -->
     </table>
   </body>
 </html>
